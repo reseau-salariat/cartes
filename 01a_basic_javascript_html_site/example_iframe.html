@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Map</title>
+    <style>
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 75%; /* Aspect ratio */
+            height: 0;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Embedded Map</h1>
+    <div class="iframe-container">
+        <iframe src="https://patechoc.github.io/github_static_map_test/"></iframe>
+    </div>
+</body>
+</html>

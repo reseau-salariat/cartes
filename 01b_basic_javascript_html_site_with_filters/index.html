@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Réseaux Salariat</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        .legend {
+            position: absolute;
+            bottom: 30px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            z-index: 1000; /* Ensure the legend is above other elements */
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="legend" class="legend">
+        <input type="checkbox" id="toggleGL" checked> Groupes locaux<br>
+        <input type="checkbox" id="toggleSSA" checked> Initiatives locales SSA<br>
+        <div id="eventFilters">
+            <h4>Filtres événements et activités</h4>
+            <label for="eventSelect">Sélectionnez un événement :</label>
+            <select id="eventSelect">
+                <option value="">Tous les événements</option>
+                <!-- Options ajoutées dynamiquement par JavaScript -->
+            </select>
+            <br>
+            <label for="activitySelect">Sélectionnez une activité :</label>
+            <select id="activitySelect">
+                <option value="">Toutes les activités</option>
+                <!-- Options ajoutées dynamiquement par JavaScript -->
+            </select>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+    <script src="markers.js"></script>
+    <script>
+        var map = L.map('map').setView([46.603354, 1.888334], 6); // Center of France
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var groupesLayer = L.markerClusterGroup();
+        var initiativesLayer = L.markerClusterGroup();
+
+        var customIconGL = L.icon({
+            iconUrl: 'static/images/icon_rs.png', // Update this path to your custom icon
+            iconSize: [32, 32], // Size of the icon
+            iconAnchor: [16, 32], // Point of the icon which will correspond to marker's location
+            popupAnchor: [0, -32] // Point from which the popup should open relative to the iconAnchor
+        });
+
+        var customIconSSA = L.icon({
+            iconUrl: 'static/images/icon_ssa.png', // Update this path to your custom icon
+            iconSize: [58, 32], // Size of the icon
+            iconAnchor: [16, 32], // Point of the icon which will correspond to marker's location
+            popupAnchor: [0, -32] // Point from which the popup should open relative to the iconAnchor
+        });
+
+        function addMarkers(data, layer, icon) {
+            data.forEach(function(item) {
+                var popupContent = '<b>' + item.name + '</b><br>' +
+                    '<b>Type:</b> ' + item.type + '<br>' +
+                    '<b>Address:</b> ' + item.address + ', ' + item.postcode + ' ' + item.city + '<br>' +
+                    '<b>Website:</b> <a href="' + item.website + '" target="_blank">' + item.website + '</a><br>' +
+                    '<b>Phone:</b> ' + item.phone + '<br>' +
+                    '<p>' + item.summary + '</p>';
+
+                if (item.events && item.events.length > 0) {
+                    popupContent += '<b>Événements:</b><ul>';
+                    item.events.forEach(function(event) {
+                        popupContent += '<li><b>' + event.name + ':</b> ' + event.date + '<br><b>Activités:</b> ' + event.activities.join(", ") + '</li>';
+                    });
+                    popupContent += '</ul>';
+                }
+
+                L.marker([item.lat, item.lng], { icon: icon }).addTo(layer)
+                    .bindPopup(popupContent);
+            });
+        }
+
+        addMarkers(groupes_locaux, groupesLayer, customIconGL);
+        addMarkers(initiatives_ssa, initiativesLayer, customIconSSA);
+
+        groupesLayer.addTo(map);
+        initiativesLayer.addTo(map);
+
+        document.getElementById('toggleGL').addEventListener('change', function(e) {
+            if (this.checked) {
+                map.addLayer(groupesLayer);
+            } else {
+                map.removeLayer(groupesLayer);
+            }
+        });
+
+        document.getElementById('toggleSSA').addEventListener('change', function(e) {
+            if (this.checked) {
+                map.addLayer(initiativesLayer);
+            } else {
+                map.removeLayer(initiativesLayer);
+            }
+        });
+
+        function populateEventFilters(data) {
+            var eventSet = new Set();
+            var activitySet = new Set();
+
+            data.forEach(function(item) {
+                if (item.events && item.events.length > 0) {
+                    item.events.forEach(function(event) {
+                        eventSet.add(event.name);
+                        event.activities.forEach(function(activity) {
+                            activitySet.add(activity);
+                        });
+                    });
+                }
+            });
+
+            var eventSelect = document.getElementById('eventSelect');
+            eventSet.forEach(function(event) {
+                var option = document.createElement('option');
+                option.value = event;
+                option.textContent = event;
+                eventSelect.appendChild(option);
+            });
+
+            var activitySelect = document.getElementById('activitySelect');
+            activitySet.forEach(function(activity) {
+                var option = document.createElement('option');
+                option.value = activity;
+                option.textContent = activity;
+                activitySelect.appendChild(option);
+            });
+        }
+
+        populateEventFilters(groupes_locaux.concat(initiatives_ssa));
+
+        function filterMarkers() {
+            var selectedEvent = document.getElementById('eventSelect').value;
+            var selectedActivity = document.getElementById('activitySelect').value;
+
+            groupesLayer.clearLayers();
+            initiativesLayer.clearLayers();
+
+            var filteredGroupes = groupes_locaux.filter(function(item) {
+                if (selectedEvent || selectedActivity) {
+                    if (!item.events) return false;
+                    return item.events.some(function(event) {
+                        var matchEvent = selectedEvent ? event.name === selectedEvent : true;
+                        var matchActivity = selectedActivity ? event.activities.includes(selectedActivity) : true;
+                        return matchEvent && matchActivity;
+                    });
+                }
+                return true;
+            });
+
+            var filteredInitiatives = initiatives_ssa.filter(function(item) {
+                if (selectedEvent || selectedActivity) {
+                    if (!item.events) return false;
+                    return item.events.some(function(event) {
+                        var matchEvent = selectedEvent ? event.name === selectedEvent : true;
+                        var matchActivity = selectedActivity ? event.activities.includes(selectedActivity) : true;
+                        return matchEvent && matchActivity;
+                    });
+                }
+                return true;
+            });
+
+            addMarkers(filteredGroupes, groupesLayer, customIconGL);
+            addMarkers(filteredInitiatives, initiativesLayer, customIconSSA);
+
+            if (document.getElementById('toggleGL').checked) {
+                map.addLayer(groupesLayer);
+            }
+
+            if (document.getElementById('toggleSSA').checked) {
+                map.addLayer(initiativesLayer);
+            }
+        }
+
+        document.getElementById('eventSelect').addEventListener('change', filterMarkers);
+        document.getElementById('activitySelect').addEventListener('change', filterMarkers);
+    </script>
+</body>
+</html>

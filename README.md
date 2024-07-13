@@ -1,0 +1,1 @@
+# github_static_map_test
