@@ -327,6 +327,25 @@ var initiatives_ssa = [
             "https://lelfe.org"
         ]
     },
+    {
+        "name": "Comité local de l’alimentation",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Au Maquis! - Association"],
+        "Territoire d’expérimentation": "Sud Lubéron (Vaucluse)",
+        "Partenaires": ["collectif informel : collectifs citoyens des villages alentours (Vaugines, Cucuron, Villelaure, Lauris, Mallemort…)", "Restaurant scolaire de Lauris", "Magasin de producteurs", "Secours Populaire", "Structures de l’ESS : Leris, laboratoire de recherche", "Collectivités locales (mairies, Pnrl)"],
+        "lat": 43.746843268978125,
+        "lng": 5.307884361056558,
+        "address": "84360 Lauris, France",
+        "postcode": "84360",
+        "city": "Lauris",
+        "website": "https://securite-sociale-alimentation.org/initiative/au-maquis/",
+        "phone": "",
+        "email": "",
+        "summary": "La connaissance des causes permet de prendre de la hauteur avec sa propre vision. Il est particulièrement enrichissant d’échanger des points de vue parfois contradictoires, de construire un savoir et un horizon communs.",
+        "URLs": [
+            "https://www.aumaquis.org/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
