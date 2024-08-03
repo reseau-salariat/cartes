@@ -18,7 +18,24 @@ var initiatives_ssa = [
         "URLs": [
             "https://securite-sociale-alimentation.org/initiative/la-doume/"
         ]
-    }
+    },
+    {
+        "name": "La cagette verte",
+        "type": "initiative SSA",
+        "Structures porteuses": ["ICARE - Association ICARE"],
+        "Territoire d’expérimentation": "Saint-Quentin-en-Yvelines",
+        "Partenaires": ["La faculté de Saint-Quentin-en-Yvelines"],
+        "lat": 48.77888699840781,
+        "lng": 2.045719679701665,
+        "address": "Maison de l'étudiant 1 Allée de l'Astronomie, 78280 Guyancourt, France Île-de-France",
+        "postcode": "78280",
+        "city": "Guyancourt",
+        "website": "https://securite-sociale-alimentation.org/initiative/la-cagette-verte/",
+        "phone": "",
+        "email": "",
+        "summary": "La Cagette verte c’est un système d’AMAP à prix différencié organisé par et pour des étudiants!",
+        "URLs": ["https://www.facebook.com/AssociationIcare"]
+    },
 ]
 
 var initiatives_ssa2 = [
