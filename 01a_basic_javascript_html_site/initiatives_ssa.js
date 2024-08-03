@@ -288,6 +288,25 @@ var initiatives_ssa = [
             "https://www.facebook.com/p/La-Marmite-Rouge-100085215325610/"
         ]
     },
+    {
+        "name": "Collectif SSA-37",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Collectif informel"],
+        "Territoire d’expérimentation": "Touraine",
+        "Partenaires": ["Confédération paysanne Touraine", "PSO/AA Touraine", "Université Populaire de la Terre", "Centres sociaux", "InPACT 37", "Les ami⋅es de la Confédération paysanne", "Naya", "Les jardiniers des Hucherolles de Chinon", "Ville de Tours"],
+        "lat": 47.3941,
+        "lng": 0.6848,
+        "address": "Tours, France Centre-Val de Loire",
+        "postcode": "37000",
+        "city": "Tours",
+        "website": "https://securite-sociale-alimentation.org/initiative/collectif-ssa-37/",
+        "phone": "",
+        "email": "",
+        "summary": "En Touraine, nous sommes un collectif de 13 structures à s’être rassemblés pour contribuer à la dynamique nationale pour la mise en place de la Sécurité sociale de l’alimentation.",
+        "URLs": [
+            "https://osons.cc/p/ssa37/?PagePrincipale"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -414,24 +433,6 @@ var initiatives_ssa2 = [
         "summary": "Promouvoir la sécurité sociale de l’alimentation à Nantes Métropole.",
         "URLs": []
     },
-    {
-        "name": "Collectif SSA Tours",
-        "type": "initiative SSA",
-        "Structures porteuses": ["AMAP Tours", "Les Petits Débrouillards Centre-Val de Loire"],
-        "Territoire d’expérimentation": "Tours et son agglomération",
-        "Partenaires": ["ATTAC Tours", "Réseau Salariat Tours"],
-        "lat": 47.3941,
-        "lng": 0.6848,
-        "address": "Tours",
-        "postcode": "37000",
-        "city": "Tours",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Initiative pour la sécurité sociale de l’alimentation à Tours.",
-        "URLs": []
-    },
-
     {
         "name": "Collectif SSA Perpignan",
         "type": "initiative SSA",
