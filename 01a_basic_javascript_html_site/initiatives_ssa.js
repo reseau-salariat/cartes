@@ -88,6 +88,23 @@ var initiatives_ssa = [
         "summary": "Mise en relation de producteurs locaux et d’associations pour proposer des produits de qualité à des prix accessibles ou gratuitement et sans condition selon les partenariats.",
         "URLs": []
     },
+    {
+        "name": "SSEA Trièves",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["CERES - groupe local et initiative de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Isère (38)",
+        "Partenaires": [],
+        "lat": 44.80092651475182,
+        "lng": 5.647876014197057,
+        "address": "Le Percy, 38930 Le Percy, Auvergne-Rhône-Alpes",
+        "postcode": "38930",
+        "city": "Le Percy",
+        "website": "https://securite-sociale-alimentation.org/initiative/ssea-38/",
+        "phone": "",
+        "email": "associationceres@riseup.net",
+        "summary": "Un collectif informel, porté par le CERES, qui regroupe de nombreuses structures et acteur.ices dans le Trièves. Nous nous réunissons pour travailler au maillage de notre territoire en lien avec la SSA et sur la faisabilité de construire une expérimentation.",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
