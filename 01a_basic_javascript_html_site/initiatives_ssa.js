@@ -460,6 +460,27 @@ var initiatives_ssa = [
             "http://mutuelle-alimentation-alsace.fr/"
         ]
     },
+    {
+        "name": "Collectif Acclimat’action: pour réfléchir et expérimenter dans les quartiers populaires",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Vrac Bordeaux", "les râteleurs", "supercoop", "capsciences", "CeDS", "Du vert dans les rouages", "e-graine", "L'estey", "Moisa et MIAM - acteurs issus de l’éducation populaire, de l’économie sociale et solidaire, du travail social ou de la recherche scientifique"],
+        "Territoire d’expérimentation": "Bordeaux métropole et pays foyen",
+        "Partenaires": ["l’ADEME", "la Région Nouvelle Aquitaine", "la Fondation Carasso", "la Fondation Européenne pour le Climat", "Bordeaux Métropole", "le Conseil Départemental de Gironde et la Ville de Bordeaux"],
+        "lat": 44.87818660679672, 
+        "lng": -0.5707916787261614,
+        "address": "Avenue André Reinson, 33300 Bordeaux, Nouvelle-Aquitaine",
+        "postcode": "33300",
+        "city": "Bordeaux",
+        "website": "https://securite-sociale-alimentation.org/initiative/collectif-acclimataction-pour-reflechir-et-experimenter-dans-les-quartiers-populaires/",
+        "phone": "",
+        "email": "",
+        "summary": "Cette prise de hauteur se traduit chez les personnes par un « mélange d’indignation et d’envie d’agir »",
+        "URLs": [
+            "https://bordeaux.vrac-asso.org/",
+            "https://vrac-asso.org/ressources/precarite-et-acces-a-une-alimentation-durable-a-la-fois-saine-et-ethique-des-enjeux-multiples/",
+            "https://www.saluterre.com/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
