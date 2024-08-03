@@ -54,6 +54,23 @@ var initiatives_ssa = [
         "summary": "Déterminé à porter la proposition de Sécurité sociale de l’alimentation un groupe de militants et militantes s’organisent pour diffuser l’idée de Sécurité Sociale de l’Alimentation sur le territoire du sud Ouest de l’île de France. Plusieurs actions ont été mises en place : porteurs de paroles, ateliers de discussions, arpentages de livres, journées d’autoformation sur la sécurité sociale de l’alimentation etc … ",
         "URLs": []
     },
+    {
+        "name": "Manger Demain",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association - initiative locale vers une SSA"],
+        "Territoire d’expérimentation": "Métropole Rouen Normandie / Région Normandie",
+        "Partenaires": ["Le Producteur Local", "la Dantine", "Triticum", "Le Champ des Possibles", "Alternoo", "Groupe Nutriset", "Action Contre la Faim", "Chaire Unesco Alimentation du Monde"],
+        "lat": 49.4432,
+        "lng": 1.0993,
+        "address": "Rouen",
+        "postcode": "76000",
+        "city": "Rouen",
+        "website": "https://securite-sociale-alimentation.org/initiative/manger-demain/",
+        "phone": "",
+        "email": "",
+        "summary": "Manger Demain, est un projet dédié à la sécurité alimentaire durable sur le territoire. L'objet du projet est de fédérer les acteurs locaux des systèmes alimentaires durables dans une approche systémique, pour accélérer l'évolution des modes de consommation alimentaires dans un enjeu de santé publique, et concevoir et expérimenter des systèmes d'accès pour tous à une alimentation durable dans un enjeu de droit à l'alimentation.",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -259,23 +276,6 @@ var initiatives_ssa2 = [
         "phone": "",
         "email": "",
         "summary": "Pour une sécurité sociale de l’alimentation à Lille et sa métropole.",
-        "URLs": []
-    },
-    {
-        "name": "Collectif SSA Rouen",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Rouen", "AMAP Rouen", "Les Amis de la Terre Normandie"],
-        "Territoire d’expérimentation": "Rouen et son agglomération",
-        "Partenaires": ["ATTAC Rouen", "Réseau Salariat Rouen"],
-        "lat": 49.4432,
-        "lng": 1.0993,
-        "address": "Rouen",
-        "postcode": "76000",
-        "city": "Rouen",
-        "website": "",
-        "phone": "",
-        "email": "ssa.rouen@gmail.com",
-        "summary": "Initiative pour une alimentation durable et solidaire à Rouen.",
         "URLs": []
     },
     {
