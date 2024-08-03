@@ -124,26 +124,28 @@ var initiatives_ssa = [
             "https://www.facebook.com/profile.php?id=100076181847462"
         ]
     },
+    {
+        "name": "Expérimentation d’une SSA pour les étudiant·es des campus bordelais",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Multiples - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Bordeaux Métropole",
+        "Partenaires": ["La GEMME", "Le CREPAQ", "VRAC Université", "La cuvée des écolos", "Bordeaux Métropole", "CCAS de Bordeaux", "Université Bordeaux Montaigne", "Université de Bordeaux", "Ville de Pessac", "SICA Maraichère Bordelaise", "RESES", "La Fédération ATENA", "Ingénieurs Sans Frontières", "Bordeaux Sciences Agro", "une 20aine d’étudiant·es"],
+        "lat": 44.8378,
+        "lng": -0.5792,
+        "address": "Bordeaux",
+        "postcode": "33000",
+        "city": "Bordeaux",
+        "website": "https://securite-sociale-alimentation.org/initiative/projet-dexperimentation-dune-securite-sociale-de-lalimentation-pour-les-etudiant%c2%b7es-des-campus-bordelais/",
+        "phone": "",
+        "email": "contact@crepaq.ong",
+        "summary": "",
+        "URLs": [
+            "https://www.crepaq.ong/ssa%C3%A9tudiante"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
-    {
-        "name": "Collectif Acclimat’action",
-        "type": "initiative SSA",
-        "Structures porteuses": ["Vrac Bordeaux","les râteleurs","supercoop","capsciences","CeDS","Du vert dans les rouages","e-graine","L'estey","Moisa et MIAM - acteurs issus de l’éducation populaire de l’économie sociale et solidaire du travail social ou de la recherche scientifique"],
-        "Territoire d’expérimentation": "Bordeaux métropole et pays foyen",
-        "Partenaires": ["l’ADEME", "la Région Nouvelle Aquitaine", "la Fondation Carasso", "la Fondation Européenne pour le Climat", "Bordeaux Métropole", "le Conseil Départemental de Gironde et la Ville de Bordeaux"],
-        "lat": 44.8775859,
-        "lng": -0.5717582,
-        "address": "Av. André Reinson",
-        "postcode": "33300",
-        "city": "Bordeaux",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Pour réfléchir et expérimenter dans les quartiers populaires",
-        "URLs": ["https://www.acclimataction.fr/", "https://securite-sociale-alimentation.org/initiative/collectif-acclimataction-pour-reflechir-et-experimenter-dans-les-quartiers-populaires/"]
-    },
     {
         "name": "Caisse commune de l’alimentation Montpellier",
         "type": "initiative SSA",
@@ -177,23 +179,6 @@ var initiatives_ssa2 = [
         "email": "collectif-ssa35@protonmail.com",
         "summary": "Le Collectif SSA 35 mène différentes actions pour faire connaître la proposition politique au grand public et mobiliser pour la création de la SSA.",
         "URLs": []
-    },
-    {
-        "name": "Bureaux SSA 33",
-        "type": "initiative SSA",
-        "Structures porteuses": ["ATD Quart Monde Gironde", "Collectif pour une transition citoyenne Gironde", "Réseau Salariat Gironde"],
-        "Territoire d’expérimentation": "Bordeaux Métropole",
-        "Partenaires": ["Les Amis de la Terre Gironde", "VRAC Bordeaux", "Les Landes Solidaires"],
-        "lat": 44.8378,
-        "lng": -0.5792,
-        "address": "Bordeaux",
-        "postcode": "",
-        "city": "Bordeaux",
-        "website": "https://securite-sociale-alimentation.org/bordeaux/",
-        "phone": "",
-        "email": "ssa.bordeaux@gmail.com",
-        "summary": "Un lieu pour échanger et construire ensemble autour des questions alimentaires.",
-        "URLs": ["https://securite-sociale-alimentation.org/bordeaux/"]
     },
     {
         "name": "Collectif SSA 69",
@@ -552,23 +537,6 @@ var initiatives_ssa2 = [
         "phone": "",
         "email": "",
         "summary": "Démarche pour une sécurité sociale de l’alimentation à Nice.",
-        "URLs": []
-    },
-    {
-        "name": "Collectif SSA Bordeaux Métropole",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Bordeaux", "Les Amis de la Terre Gironde"],
-        "Territoire d’expérimentation": "Bordeaux Métropole",
-        "Partenaires": ["ATTAC Bordeaux Métropole", "Réseau Salariat Bordeaux"],
-        "lat": 44.8378,
-        "lng": -0.5792,
-        "address": "Bordeaux",
-        "postcode": "33000",
-        "city": "Bordeaux",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Initiative pour la sécurité sociale de l’alimentation à Bordeaux Métropole.",
         "URLs": []
     },
     {
