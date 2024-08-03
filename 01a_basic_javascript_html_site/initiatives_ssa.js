@@ -1,6 +1,28 @@
 // https://securite-sociale-alimentation.org/les-dynamiques-locales/carte-des-initiatives-locales-de-la-ssa/
 var initiatives_ssa = [
     {
+        "name": "Soli’Doume",
+        "type": "initiative SSA",
+        "Structures porteuses": ["ADML63", "le CRESNA", "VRAC Clermont-Ferrand", "Les Petits Débrouillards Auvergne"],
+        "Territoire d’expérimentation": "Clermont-Ferrand",
+        "Partenaires": ["CRESNA (coopérative)", "CISCA (recherche)"],
+        "lat": 45.7741254,
+        "lng": 3.0842469,
+        "address": "Rue Meissonnier, 63000 Clermont-Ferrand, France Auvergne-Rhône-Alpes",
+        "postcode": "63000",
+        "city": "Clermont-Ferrand",
+        "website": "https://securite-sociale-alimentation.org/initiative/la-doume/",
+        "phone": "",
+        "email": "",
+        "summary": "L’équipe de l’Association pour le Développement des Monnaies Locales dans le Puy-de-Dôme a mis en place un travail de réflexion auprès de ses membres pour permettre l’accès de tous à une alimentation de qualité. (Monnaie Locale, coopérative)",
+        "URLs": [
+            "https://securite-sociale-alimentation.org/initiative/la-doume/"
+        ]
+    }
+]
+
+var initiatives_ssa2 = [
+    {
         "name": "Collectif Acclimat’action",
         "type": "initiative SSA",
         "Structures porteuses": ["Vrac Bordeaux","les râteleurs","supercoop","capsciences","CeDS","Du vert dans les rouages","e-graine","L'estey","Moisa et MIAM - acteurs issus de l’éducation populaire de l’économie sociale et solidaire du travail social ou de la recherche scientifique"],
@@ -134,23 +156,6 @@ var initiatives_ssa = [
         "phone": "",
         "email": "ssa31@gmail.com",
         "summary": "Pour une alimentation digne et durable en Haute-Garonne.",
-        "URLs": []
-    },
-    {
-        "name": "Collectif SSA 75",
-        "type": "initiative SSA",
-        "Structures porteuses": ["AMAP Ile-de-France", "Réseau Salariat Paris", "Terre de Liens IDF"],
-        "Territoire d’expérimentation": "Paris et petite couronne",
-        "Partenaires": ["ATTAC Paris", "Les Amis de la Terre IDF"],
-        "lat": 48.8566,
-        "lng": 2.3522,
-        "address": "Paris",
-        "postcode": "75000",
-        "city": "Paris",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Initiative pour la sécurité sociale de l’alimentation en Île-de-France.",
         "URLs": []
     },
     {
@@ -289,23 +294,7 @@ var initiatives_ssa = [
         "summary": "Initiative pour la sécurité sociale de l’alimentation à Tours.",
         "URLs": []
     },
-    {
-        "name": "Collectif SSA Clermont-Ferrand",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Clermont-Ferrand", "Les Petits Débrouillards Auvergne"],
-        "Territoire d’expérimentation": "Clermont-Ferrand",
-        "Partenaires": ["ATTAC Clermont-Ferrand", "Réseau Salariat Clermont-Ferrand"],
-        "lat": 45.7772,
-        "lng": 3.087,
-        "address": "Clermont-Ferrand",
-        "postcode": "63000",
-        "city": "Clermont-Ferrand",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Pour une sécurité sociale de l’alimentation à Clermont-Ferrand.",
-        "URLs": []
-    },
+
     {
         "name": "Collectif SSA Perpignan",
         "type": "initiative SSA",
