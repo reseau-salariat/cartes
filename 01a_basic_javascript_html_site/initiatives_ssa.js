@@ -177,6 +177,26 @@ var initiatives_ssa = [
         "summary": "L’association collecte des fruits et légumes abîmés, les transforme en confitures et les re-distribue sur evènements ciblés ou auprès de population plus fragile telles que les étudiants de paris 8 ou les mineurs migrants.",
         "URLs": []
     },
+    {
+        "name": "Caisse de l’alimentation – Territoires à VivreS Grand Lyon",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association - initiative locale vers une SSA"],
+        "Territoire d’expérimentation": "L'aire urbaine de Lyon, et en particulier l'arrondissement de Lyon 8",
+        "Partenaires": ["VRAC Lyon Métropole", "le Groupement des Epiceries Sociales et Solidaires Rhône Alpes", "Habitat et Humanisme Rhône", "le Secours Catholique du Rhône", "le Groupement Régional Alimentaire de Proximité (GRAP)", "Récup & Gamelles", "Agribio", "l'UGESS", "la Fédération des Centres Sociaux du Rhône", "Bellebouffe", "Epi c'est bon", "l'ADDEAR", "le Réseau AMAP Aura", "Epicentre", "l'ISARA", "Bio à pro", "l'Espace Créateur de Solidarité de Saint-Fons", "la Maison Engagée et Solidaire de l'Alimentation", "les Jardins de Lucie", "la Métropole de Lyon"],
+        "lat": 45.70769409083929,
+        "lng": 4.869807983240429,
+        "address": "41 avenue de la république, 69200 Vénissieux",
+        "postcode": "69200",
+        "city": "Lyon",
+        "website": "https://securite-sociale-alimentation.org/initiative/caisse-de-lalimentation-territoires-a-vivres-grand-lyon/",
+        "phone": "",
+        "email": "",
+        "summary": "Pour une sécurité sociale de l’alimentation dans la région lyonnaise.",
+        "URLs": [
+            "https://tav-lyon.xyz/?PagePrincipale",
+            "https://www.linkedin.com/company/territoires-%C3%A0-vivres-grand-lyon/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -198,23 +218,7 @@ var initiatives_ssa2 = [
         "URLs": ["https://tav-montpellier.xyz/?Experimentation"]
     },
 
-    {
-        "name": "Collectif SSA 69",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Lyon", "La Légumerie", "Les Petits Débrouillards Rhône-Alpes"],
-        "Territoire d’expérimentation": "Lyon et ses environs",
-        "Partenaires": ["La Gonette", "Cocagne Haute Dombes", "La Caravane des possibles"],
-        "lat": 45.764043,
-        "lng": 4.835659,
-        "address": "Lyon",
-        "postcode": "69000",
-        "city": "Lyon",
-        "website": "",
-        "phone": "",
-        "email": "collectifssa69@gmail.com",
-        "summary": "Pour une sécurité sociale de l’alimentation dans la région lyonnaise.",
-        "URLs": []
-    },
+
     {
         "name": "SSA Toulouse",
         "type": "initiative SSA",
@@ -283,23 +287,7 @@ var initiatives_ssa2 = [
         "summary": "Un collectif pour la sécurité sociale de l’alimentation à Nantes.",
         "URLs": []
     },
-    {
-        "name": "Collectif SSA Lyon",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Lyon", "Les Petits Débrouillards Rhône-Alpes", "La Légumerie"],
-        "Territoire d’expérimentation": "Lyon et alentours",
-        "Partenaires": ["Cocagne Haute Dombes", "La Gonette", "La Caravane des possibles"],
-        "lat": 45.764043,
-        "lng": 4.835659,
-        "address": "Lyon",
-        "postcode": "69000",
-        "city": "Lyon",
-        "website": "",
-        "phone": "",
-        "email": "ssa.lyon@gmail.com",
-        "summary": "Promotion de la sécurité sociale de l’alimentation dans la région lyonnaise.",
-        "URLs": []
-    },
+
     {
         "name": "Collectif SSA Marseille",
         "type": "initiative SSA",
