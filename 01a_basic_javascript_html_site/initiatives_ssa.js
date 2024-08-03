@@ -498,26 +498,29 @@ var initiatives_ssa = [
         "summary": "Un collectif informel de 25 organisations mobilisé pour monter une expérimentation autour de la démocratie alimentaire.",
         "URLs": ["https://tav-montpellier.xyz/?Experimentation"]
     },
-]
-
-var initiatives_ssa2 = [
     {
-        "name": "SSA Toulouse",
+        "name": "Caissalim-Toulouse",
         "type": "initiative SSA",
-        "Structures porteuses": ["Les Amis de la Terre Midi-Pyrénées", "ATTAC Toulouse", "Réseau Salariat Toulouse"],
-        "Territoire d’expérimentation": "Toulouse",
-        "Partenaires": ["VRAC Toulouse", "Terre de liens Midi-Pyrénées", "ADEPES"],
-        "lat": 43.6047,
-        "lng": 1.4442,
+        "Structures porteuses": ["Centre de recherche - initiative locale vers une SSA"],
+        "Territoire d’expérimentation": "Aire urbaine toulousaine",
+        "Partenaires": ["EDENN", "Cocagne Alimen’Terre", "Caracole et MAMA", "100e Singe et le LEGTA de Toulouse-Auzeville", "INRAE", "des étudiants de l’ENSAT et Sol Violette"],
+        "lat": 43.643163344453434,
+        "lng": 1.460984993000681,
         "address": "Toulouse",
         "postcode": "31000",
         "city": "Toulouse",
-        "website": "",
+        "website": "https://securite-sociale-alimentation.org/initiative/caissalim-toulouse/",
         "phone": "",
         "email": "ssa.toulouse@gmail.com",
         "summary": "Expérimenter une sécurité sociale de l’alimentation dans la ville rose.",
-        "URLs": []
+        "URLs": [
+            "http://www.caissalim-toulouse.org/"
+        ]
     },
+]
+
+var initiatives_ssa2 = [
+    
     {
         "name": "Collectif SSA Grenoble",
         "type": "initiative SSA",
