@@ -235,6 +235,23 @@ var initiatives_ssa = [
             "https://www.bio-ariege-garonne.fr/article/accessibilite-alimentaire"
         ]
     },
+    {
+        "name": "Groupe local SSA 38",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Collectif informel - groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Isère (38)",
+        "Partenaires": [],
+        "lat": 45.187855539457395,
+        "lng": 5.723092297478416,
+        "address": "",
+        "postcode": "",
+        "city": "",
+        "website": "https://securite-sociale-alimentation.org/initiative/groupe-local-ssa-38/",
+        "phone": "",
+        "email": "gl-ssa38@gresille.org",
+        "summary": "",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
