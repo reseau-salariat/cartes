@@ -71,6 +71,23 @@ var initiatives_ssa = [
         "summary": "Manger Demain, est un projet dédié à la sécurité alimentaire durable sur le territoire. L'objet du projet est de fédérer les acteurs locaux des systèmes alimentaires durables dans une approche systémique, pour accélérer l'évolution des modes de consommation alimentaires dans un enjeu de santé publique, et concevoir et expérimenter des systèmes d'accès pour tous à une alimentation durable dans un enjeu de droit à l'alimentation.",
         "URLs": []
     },
+    {
+        "name": "La Collab Solidaire",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Hauts-de-France",
+        "Partenaires": ["CSC Etouvie", "CS Elbeuf", "Relai social", "communes Helemmes", "Lille", "Flixecourt", "L’Etoile"],
+        "lat": 50.6292,
+        "lng": 3.0573,
+        "address": "Lille",
+        "postcode": "59000",
+        "city": "Lille",
+        "website": "https://securite-sociale-alimentation.org/initiative/collab-solidaire/",
+        "phone": "",
+        "email": "",
+        "summary": "Mise en relation de producteurs locaux et d’associations pour proposer des produits de qualité à des prix accessibles ou gratuitement et sans condition selon les partenariats.",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -261,23 +278,7 @@ var initiatives_ssa2 = [
         "summary": "Initiative pour la sécurité sociale de l’alimentation à Marseille.",
         "URLs": []
     },
-    {
-        "name": "Collectif SSA Lille",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Lille", "Les Petits Débrouillards Hauts-de-France"],
-        "Territoire d’expérimentation": "Lille et Métropole Européenne de Lille",
-        "Partenaires": ["ATTAC Lille", "Réseau Salariat Lille"],
-        "lat": 50.6292,
-        "lng": 3.0573,
-        "address": "Lille",
-        "postcode": "59000",
-        "city": "Lille",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Pour une sécurité sociale de l’alimentation à Lille et sa métropole.",
-        "URLs": []
-    },
+
     {
         "name": "Collectif SSA Strasbourg",
         "type": "initiative SSA",
