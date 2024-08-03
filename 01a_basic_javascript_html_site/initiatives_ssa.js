@@ -160,6 +160,23 @@ var initiatives_ssa = [
         "summary": "Le Collectif SSA 35 mène différentes actions pour faire connaître la proposition politique au grand public et mobiliser pour la création de la SSA.",
         "URLs": []
     },
+    {
+        "name": "Conserverie solidaire",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Association - groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Saint-Denis, Stains",
+        "Partenaires": [],
+        "lat": 48.94598112524915,
+        "lng": 2.3733663109107876,
+        "address": "Saint-Denis/Stains, France",
+        "postcode": "93240",
+        "city": "Stains",
+        "website": "https://securite-sociale-alimentation.org/initiative/conserverie-solidaire/",
+        "phone": "",
+        "email": "",
+        "summary": "L’association collecte des fruits et légumes abîmés, les transforme en confitures et les re-distribue sur evènements ciblés ou auprès de population plus fragile telles que les étudiants de paris 8 ou les mineurs migrants.",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
