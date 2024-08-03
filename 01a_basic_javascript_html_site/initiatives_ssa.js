@@ -130,17 +130,17 @@ var initiatives_ssa = [
         "Structures porteuses": ["Multiples - initiative et groupe local de réflexion vers une SSA"],
         "Territoire d’expérimentation": "Bordeaux Métropole",
         "Partenaires": ["La GEMME", "Le CREPAQ", "VRAC Université", "La cuvée des écolos", "Bordeaux Métropole", "CCAS de Bordeaux", "Université Bordeaux Montaigne", "Université de Bordeaux", "Ville de Pessac", "SICA Maraichère Bordelaise", "RESES", "La Fédération ATENA", "Ingénieurs Sans Frontières", "Bordeaux Sciences Agro", "une 20aine d’étudiant·es"],
-        "lat": 44.8378,
-        "lng": -0.5792,
-        "address": "Bordeaux",
-        "postcode": "33000",
+        "lat": 44.83064510417015, 
+        "lng": -0.5656059499354108,
+        "address": "6 rue des Douves 33800 Bordeaux",
+        "postcode": "33800",
         "city": "Bordeaux",
         "website": "https://securite-sociale-alimentation.org/initiative/projet-dexperimentation-dune-securite-sociale-de-lalimentation-pour-les-etudiant%c2%b7es-des-campus-bordelais/",
-        "phone": "",
+        "phone": "05 35 54 26 97",
         "email": "contact@crepaq.ong",
         "summary": "",
         "URLs": [
-            "https://www.crepaq.ong/ssa%C3%A9tudiante"
+            "https://www.crepaq.ong/ssa%C3%A9tudiante",
         ]
     },
 ]
