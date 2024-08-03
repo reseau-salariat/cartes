@@ -346,6 +346,26 @@ var initiatives_ssa = [
             "https://www.aumaquis.org/"
         ]
     },
+    {
+        "name": "Comité local de l’alimentation",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Association"],
+        "Territoire d’expérimentation": "Saumurois",
+        "Partenaires": [],
+        "lat": 47.25971386233817,
+        "lng": -0.07481046085842603,
+        "address": "12, rue de la Tonnelle, 49400 Saumur",
+        "postcode": "49400",
+        "city": "Saumur",
+        "website": "https://securite-sociale-alimentation.org/initiative/au-maquis/",
+        "phone": "07.81.14.01.14",
+        "email": "contact@unipops.fr",
+        "summary": "Un petit groupe informel d’habitants et d’habitantes qui se mobilisent pour diffuser l’idée de Sécurité sociale de l’alimentation sur leur territoire, auprès des élus etc…! Vous êtes du coin? Rejoignez-nous!",
+        "URLs": [
+            "https://unipopsaumurois.com/securite-sociale-alimentaire"
+        ]
+    },
+]
 ]
 
 var initiatives_ssa2 = [
