@@ -307,6 +307,26 @@ var initiatives_ssa = [
             "https://osons.cc/p/ssa37/?PagePrincipale"
         ]
     },
+    {
+        "name": "L’ELFE, Epicerie Locale Favorisant l’Entraide",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association"],
+        "Territoire d’expérimentation": "Brocéliande (communes rurales du Morbihan et d’Ille et Vilaine)",
+        "Partenaires": [],
+        "lat": 48.11360272054891,
+        "lng": -2.067527352133475,
+        "address": "35750 Saint-Gonlay, France",
+        "postcode": "35750",
+        "city": "Saint-Gonlay",
+        "website": "https://securite-sociale-alimentation.org/initiative/lelfe-epicerie-locale-favorisant-lentraide/",
+        "phone": "06.42.77.43.42",
+        "email": "lelfe@riseup.net",
+        "summary": "Création d’une épicerie solidaire mixte (ouverte à tou-te-s et itinérante) : projet qui tourne depuis deux ans avec une possibilité suivant sa situation sociale, financière etc d’accéder à des aliments locaux et de qualité à hauteur de 50 % du prix affiché.",
+        "URLs": [
+            "https://www.facebook.com/epiceriesolidaireenbroceliande",
+            "https://lelfe.org"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -448,23 +468,6 @@ var initiatives_ssa2 = [
         "phone": "",
         "email": "",
         "summary": "Pour une sécurité sociale de l’alimentation à Perpignan.",
-        "URLs": []
-    },
-    {
-        "name": "Collectif SSA Rennes Métropole",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Rennes Métropole", "Les Amis de la Terre Ille-et-Vilaine"],
-        "Territoire d’expérimentation": "Rennes Métropole",
-        "Partenaires": ["ATTAC Rennes Métropole", "Réseau Salariat Rennes Métropole"],
-        "lat": 48.1173,
-        "lng": -1.6778,
-        "address": "Rennes",
-        "postcode": "35000",
-        "city": "Rennes",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Promouvoir la sécurité sociale de l’alimentation à Rennes Métropole.",
         "URLs": []
     },
     {
