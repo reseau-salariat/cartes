@@ -105,6 +105,25 @@ var initiatives_ssa = [
         "summary": "Un collectif informel, porté par le CERES, qui regroupe de nombreuses structures et acteur.ices dans le Trièves. Nous nous réunissons pour travailler au maillage de notre territoire en lien avec la SSA et sur la faisabilité de construire une expérimentation.",
         "URLs": []
     },
+    {
+        "name": "La MEUP",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Structure de l'ESS - initiative locale vers une SSA"],
+        "Territoire d’expérimentation": "Secteur Paray-Vieille-Poste (91) et secteur de Rungis (94)",
+        "Partenaires": ["PTCE Coop Communs", "PTCE Pôle Noé Coopérative", "Coop Communs Coopérative", "Nature Nourricière", "Coopérative ESSCOOP", "Ville de Paray-Vieille-Poste", "Etablissement Territorial Grand-Orly-Seine-Bièvre", "Club Francilien de l'EFC", "Association Le Théâtre du Fil"],
+        "lat": 48.71259543816393,
+        "lng": 2.3616348553956517,
+        "address": "Paray-Vieille-Poste",
+        "postcode": "91550",
+        "city": "Paray-Vieille-Poste",
+        "website": "https://securite-sociale-alimentation.org/initiative/la-meup-pour-lacceleration-de-la-transition-alimentaire-ecologique-et-sociale/",
+        "phone": "",
+        "email": "",
+        "summary": "",
+        "URLs": [
+            "https://www.facebook.com/profile.php?id=100076181847462"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
