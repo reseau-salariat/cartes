@@ -405,6 +405,42 @@ var initiatives_ssa = [
             "https://www.facebook.com/SocialeAlim"
         ]
     },
+    {
+        "name": "Vers une Sécurité Sociale de l’Alimentation à Dieulefit et alentours",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Multiples - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Dieulefit et communauté de communes alentours",
+        "Partenaires": [],
+        "lat": 44.526725404152174, 
+        "lng": 5.06157340380825,
+        "address": "Dieulefit",
+        "postcode": "26220",
+        "city": "Dieulefit",
+        "website": "https://securite-sociale-alimentation.org/initiative/autour-du-marche-du-lavoir/",
+        "phone": "",
+        "email": "caisse.alimentaire.ccdb@mailo.com",
+        "summary": "Les personnes à l’initiative du projet ont mis en place un marché de vente avec un système de prix différenciés. Le marché est localisé dans un ancien lavoir désaffecté au coeur d’un quartier avec une population mixte. L’excédent ou le déficit du marché n’est pas à la charge du maraîcher mais est géré par une coffre physique, la caisse alimentaire, qui doit permettre de pérenniser le dispositif au fil du temps.",
+        "URLs": []
+    },
+    {
+        "name": "Collectif de réflexion et d’action sur la SSA en Belgique",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Collectif informel - groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Bruxelles et Belgique francophone",
+        "Partenaires": [],
+        "lat": 50.82831935474033, 
+        "lng": 4.369217825835658,
+        "address": "Rue Van Elewyck, 35 1050 Bruxelles",
+        "postcode": "1050",
+        "city": "Bruxelles",
+        "website": "https://securite-sociale-alimentation.org/initiative/groupe-de-reflexion-sur-la-ssa-a-bruxelles/",
+        "phone": "",
+        "email": "",
+        "summary": "Le Collectif de réflexion et d’action sur la Sécurité sociale en Belgique ne fait pas à proprement partie du réseau mais nous tenions à mettre en avant ce Collectif qui travaille, en parallèle de nos avancées en France!",
+        "URLs": [
+            "https://www.collectif-ssa.be/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
