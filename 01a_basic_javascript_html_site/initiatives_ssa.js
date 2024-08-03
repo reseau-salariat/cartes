@@ -16,7 +16,8 @@ var initiatives_ssa = [
         "email": "",
         "summary": "L’équipe de l’Association pour le Développement des Monnaies Locales dans le Puy-de-Dôme a mis en place un travail de réflexion auprès de ses membres pour permettre l’accès de tous à une alimentation de qualité. (Monnaie Locale, coopérative)",
         "URLs": [
-            "https://securite-sociale-alimentation.org/initiative/la-doume/"
+            "www.cresna-intermediation.com",
+            "www.doume.org"
         ]
     },
     {
