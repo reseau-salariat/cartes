@@ -441,6 +441,25 @@ var initiatives_ssa = [
             "https://www.collectif-ssa.be/"
         ]
     },
+    {
+        "name": "Pour une Sécurité sociale de l’alimentation – Alsace",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association, « Pour une Sécurité Sociale de l’Alimentation - Alsace » - groupe local et initiative locale vers une SSA"],
+        "Territoire d’expérimentation": "Collectivité Européenne d’Alsace",
+        "Partenaires": ["Projets Alimentaires Territoriaux de:, Eurométropole de Strasbourg, Mulhouse Alsace Agglomération, Pays du Sundgau", "Chambre Régionale d’Économie Sociale et Solidaire", "Alsace Active", "Programme Ticket for Change"],
+        "lat": 48.259564608455534,
+        "lng": 7.452926328337014,
+        "address": "67600 Sélestat, France Grand Est",
+        "postcode": "67600",
+        "city": "Sélestat",
+        "website": "https://securite-sociale-alimentation.org/initiative/mutuelle-de-lalimentation-en-alsace/",
+        "phone": "",
+        "email": "contact@mutuelle-alimentation-alsace.fr",
+        "summary": "L’objectif est de s’inspirer du fonctionnement mutualiste pour créer une initiative locale la plus proche possible de la proposition de Sécurité sociale de l’alimentation.",
+        "URLs": [
+            "http://mutuelle-alimentation-alsace.fr/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -533,23 +552,7 @@ var initiatives_ssa2 = [
         "URLs": []
     },
 
-    {
-        "name": "Collectif SSA Strasbourg",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Strasbourg", "Les Petits Débrouillards Grand Est"],
-        "Territoire d’expérimentation": "Strasbourg et sa région",
-        "Partenaires": ["ATTAC Strasbourg", "Réseau Salariat Strasbourg"],
-        "lat": 48.5734,
-        "lng": 7.7521,
-        "address": "Strasbourg",
-        "postcode": "67000",
-        "city": "Strasbourg",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Démarche pour une sécurité sociale de l’alimentation à Strasbourg.",
-        "URLs": []
-    },
+    
     {
         "name": "Collectif SSA Nantes Métropole",
         "type": "initiative SSA",
