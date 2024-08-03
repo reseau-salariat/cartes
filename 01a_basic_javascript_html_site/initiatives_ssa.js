@@ -269,6 +269,25 @@ var initiatives_ssa = [
         "summary": "Initiative pour une sécurité sociale de l’alimentation à Saint-Étienne.",
         "URLs": []
     },
+    {
+        "name": "La Marmite Rouge",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "12ème arrondissement et Est Parisien",
+        "Partenaires": [],
+        "lat": 45.4392528202996,
+        "lng": 4.383286778007318,
+        "address": "181 Avenue Daumesnil, 75012 Paris, France Île-de-France",
+        "postcode": "75012",
+        "city": "Paris",
+        "website": "https://securite-sociale-alimentation.org/initiative/la-marmite-rouge/",
+        "phone": "",
+        "email": "lamarmiterouge@protonmail.com",
+        "summary": "La Marmite Rouge est une association localisée dans le 12ème arrondissement de Paris, militant pour la Sécurité sociale de l’alimentation (SSA).",
+        "URLs": [
+            "https://www.facebook.com/p/La-Marmite-Rouge-100085215325610/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
