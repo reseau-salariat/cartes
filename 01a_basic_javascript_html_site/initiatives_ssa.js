@@ -357,7 +357,7 @@ var initiatives_ssa = [
         "address": "12, rue de la Tonnelle, 49400 Saumur",
         "postcode": "49400",
         "city": "Saumur",
-        "website": "https://securite-sociale-alimentation.org/initiative/au-maquis/",
+        "website": "https://securite-sociale-alimentation.org/initiative/unipop-saumurois/",
         "phone": "07.81.14.01.14",
         "email": "contact@unipops.fr",
         "summary": "Un petit groupe informel d’habitants et d’habitantes qui se mobilisent pour diffuser l’idée de Sécurité sociale de l’alimentation sur leur territoire, auprès des élus etc…! Vous êtes du coin? Rejoignez-nous!",
@@ -365,7 +365,27 @@ var initiatives_ssa = [
             "https://unipopsaumurois.com/securite-sociale-alimentaire"
         ]
     },
-]
+    {
+        "name": "Epicerie Paysanne Ambulante et Solidaire",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Structure de l'ESS - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Haute-Vallée de l'Aude et Département de l'Aude",
+        "Partenaires": ["La SCIC Maison Paysanne de l’Aude", "Nature et Progrès Aude", "la Confédération Paysanne de l’Aude", "le groupement d’achat la Musette", "les Jardins de la Haute-Vallée, coopérative de transformation de fruits et légumes", "le Secours Catholique Aude-Roussillon"],
+        "lat": 43.047672933691395,
+        "lng": 2.2229284499791984307884361056558,
+        "address": "1 Avenue Salvador Allende, Limoux, France",
+        "postcode": "11300",
+        "city": "Limoux",
+        "website": "https://securite-sociale-alimentation.org/initiative/epicerie-paysanne-ambulante-et-solidaire/",
+        "phone": "",
+        "email": "maisonpaysanne@mp11.fr",
+        "summary": "La connaissance des causes permet de prendre de la hauteur avec sa propre vision. Il est particulièrement enrichissant d’échanger des points de vue parfois contradictoires, de construire un savoir et un horizon communs.",
+        "URLs": [
+            "https://www.maisonpaysanneaude.fr/epicerie-paysanne-aude/",
+            "https://www.facebook.com/MaisonPaysanne11",
+            "https://www.maisonpaysanneaude.fr"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
