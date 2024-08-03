@@ -143,6 +143,23 @@ var initiatives_ssa = [
             "https://www.crepaq.ong/ssa%C3%A9tudiante",
         ]
     },
+    {
+        "name": "Collectif SSA 35",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Collectif informel - groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Ille-et-Vilaine (35)",
+        "Partenaires": [],
+        "lat": 48.10387821015734,
+        "lng": -1.67052829575318,
+        "address": "Place de la Gare, 35000 Rennes, France",
+        "postcode": "35000",
+        "city": "Rennes",
+        "website": "https://securite-sociale-alimentation.org/initiative/collectif-ssa-35/",
+        "phone": "",
+        "email": "collectif-ssa35@protonmail.com",
+        "summary": "Le Collectif SSA 35 mène différentes actions pour faire connaître la proposition politique au grand public et mobiliser pour la création de la SSA.",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -163,23 +180,7 @@ var initiatives_ssa2 = [
         "summary": "Un collectif informel de 25 organisations mobilisé pour monter une expérimentation autour de la démocratie alimentaire.",
         "URLs": ["https://tav-montpellier.xyz/?Experimentation"]
     },
-    {
-        "name": "Collectif SSA 35",
-        "type": "initiative SSA",
-        "Structures porteuses": ["Collectif informel - groupe local de réflexion vers une SSA"],
-        "Territoire d’expérimentation": "Ille-et-Vilaine (35)",
-        "Partenaires": ["Alternatiba", "AMAP", "ATTAC Rennes", "CIVAM", "Le P’tit Blosneur", "Maison de la consommation et l’environnement"],
-        "lat": 48.1173,
-        "lng": -1.6778,
-        "address": "Place de la Gare",
-        "postcode": "35000",
-        "city": "Rennes",
-        "website": "",
-        "phone": "",
-        "email": "collectif-ssa35@protonmail.com",
-        "summary": "Le Collectif SSA 35 mène différentes actions pour faire connaître la proposition politique au grand public et mobiliser pour la création de la SSA.",
-        "URLs": []
-    },
+
     {
         "name": "Collectif SSA 69",
         "type": "initiative SSA",
