@@ -481,28 +481,26 @@ var initiatives_ssa = [
             "https://www.saluterre.com/"
         ]
     },
-]
-
-var initiatives_ssa2 = [
     {
         "name": "Caisse commune de l’alimentation Montpellier",
         "type": "initiative SSA",
-        "Structures porteuses": ["Réseau cocagne", "Secours Catholique France", "VRAC", "UGESS", "Réseau Civam"],
-        "Territoire d’expérimentation": "Montpellier, France",
-        "Partenaires": ["collectif national « Accès digne à l’alimentation »"],
+        "Structures porteuses": ["Collectif informel - Collectif informel"],
+        "Territoire d’expérimentation": "Montpellier",
+        "Partenaires": ["Alternatiba", "ATD Quart-Monde", "CCAS", "Chaire Unesco Alimentation du Monde", "CIRAD", "CIVAM Bio 34", "Croix-Rouge Insertion", "EPSO – épicerie solidaire – Ugess", "FAS Occitanie", "FR CIVAM Occitanie", "Grenier d’abondance", "INPACT 34", "La 5e saison", "La cagette", "supermarché coopératif", "La Graine", "monnaie locale complémentaire", "L’esperluette-Celleneuve", "Marché paysan", "MIN de Montpellier", "Petits débrouillards 34", "Secours Catholique Hérault", "Semeurs de jardin", "SIAO", "Vobsalim", "Vrac & Cocinas"],
         "lat": 43.6119,
         "lng": 3.8772,
         "address": "Montpellier",
-        "postcode": "",
+        "postcode": "34000",
         "city": "Montpellier",
-        "website": "https://tav-montpellier.xyz/?Experimentation",
-        "phone": "",
+        "website": "https://securite-sociale-alimentation.org/initiative/caisse-commune-de-lalimentation-montpellier/",
+        "phone": "06 12 96 45 71",
         "email": "",
         "summary": "Un collectif informel de 25 organisations mobilisé pour monter une expérimentation autour de la démocratie alimentaire.",
         "URLs": ["https://tav-montpellier.xyz/?Experimentation"]
     },
+]
 
-
+var initiatives_ssa2 = [
     {
         "name": "SSA Toulouse",
         "type": "initiative SSA",
@@ -691,23 +689,6 @@ var initiatives_ssa2 = [
         "phone": "",
         "email": "",
         "summary": "Pour une sécurité sociale de l’alimentation à Bayonne.",
-        "URLs": []
-    },
-    {
-        "name": "Collectif SSA Montpellier Métropole",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Montpellier", "Les Petits Débrouillards Occitanie"],
-        "Territoire d’expérimentation": "Montpellier Métropole",
-        "Partenaires": ["ATTAC Montpellier", "Réseau Salariat Montpellier"],
-        "lat": 43.6119,
-        "lng": 3.8772,
-        "address": "Montpellier",
-        "postcode": "34000",
-        "city": "Montpellier",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Initiative pour la sécurité sociale de l’alimentation à Montpellier Métropole.",
         "URLs": []
     },
     {
