@@ -252,6 +252,23 @@ var initiatives_ssa = [
         "summary": "",
         "URLs": []
     },
+    {
+        "name": "Caisse sociale de l’alimentation",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Structure de l'ESS - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Saint-Etienne et alentours",
+        "Partenaires": ["Terrain d’entente", "les Brigades de solidarité", "la Fourmilière", "la Cantine de quartier du Crêt-de-Roch", "les AMAPs de la Loire", "l’AMAP de Beaubrun", "De la Ferme au Quartier", "VRAC Saint Etienne", "la Biocoop des arcades", "Oasis", "Au terroir", "Danae care", "Coop’Sol42 et la Fabrique de la transition"],
+        "lat": 45.4392528202996,
+        "lng": 4.383286778007318,
+        "address": "Saint-Étienne",
+        "postcode": "42000",
+        "city": "Saint-Étienne",
+        "website": "https://securite-sociale-alimentation.org/initiative/collectif-solidarite-alimentaire-ssa42/",
+        "phone": "",
+        "email": "",
+        "summary": "Initiative pour une sécurité sociale de l’alimentation à Saint-Étienne.",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -649,23 +666,6 @@ var initiatives_ssa2 = [
         "phone": "",
         "email": "",
         "summary": "Démarche pour une sécurité sociale de l’alimentation à Toulon.",
-        "URLs": []
-    },
-    {
-        "name": "Collectif SSA Saint-Étienne",
-        "type": "initiative SSA",
-        "Structures porteuses": ["VRAC Saint-Étienne", "Les Petits Débrouillards Auvergne-Rhône-Alpes"],
-        "Territoire d’expérimentation": "Saint-Étienne et Loire",
-        "Partenaires": ["ATTAC Saint-Étienne", "Réseau Salariat Saint-Étienne"],
-        "lat": 45.4397,
-        "lng": 4.3872,
-        "address": "Saint-Étienne",
-        "postcode": "42000",
-        "city": "Saint-Étienne",
-        "website": "",
-        "phone": "",
-        "email": "",
-        "summary": "Initiative pour une sécurité sociale de l’alimentation à Saint-Étienne.",
         "URLs": []
     },
     {
