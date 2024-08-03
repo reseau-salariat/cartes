@@ -386,6 +386,25 @@ var initiatives_ssa = [
             "https://www.maisonpaysanneaude.fr"
         ]
     },
+    {
+        "name": "Local Attitude: une épicerie solidaire et participative mais ce n’est pas tout !",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Bordeaux Nord",
+        "Partenaires": ["Le Centre social de Grand-Parc, le Foyer fraternel, le Centre d’animation…", "L’association VRAC et d’autres associations autour de la solidarité alimentaire", "Les collectivités, dont la Mairie, le Département et la Région.", "Des fondations et fonds de dotation", "Des bailleurs sociaux", "Des mécènes, des entreprises à but lucratif", "Des élus de collectivités, des élus syndicaux, des élus politiques…"],
+        "lat": 44.86456836833045, 
+        "lng": -0.5819518094713092,
+        "address": "Bordeaux Nord",
+        "postcode": "33800",
+        "city": "Bordeaux",
+        "website": "https://securite-sociale-alimentation.org/initiative/local-attitude-une-epicerie-solidaire-et-participative/",
+        "phone": "05 35 54 26 97",
+        "email": "coordination.localattitude@gmail.com",
+        "summary": "EpiC’tout kesako ? Une épicerie solidaire et participative portée par l’association Local’attitude. Elle fonctionne grâce à l’implication de nombreux bénévoles. Elle propose un principe de réciprocité, prend des chèques alimentaires permettant de faire ses courses à moitié prix, accueille, oriente et accompagne des personnes en difficulté.",
+        "URLs": [
+            "https://www.facebook.com/SocialeAlim"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
