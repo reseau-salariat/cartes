@@ -37,6 +37,23 @@ var initiatives_ssa = [
         "summary": "La Cagette verte c’est un système d’AMAP à prix différencié organisé par et pour des étudiants!",
         "URLs": ["https://www.facebook.com/AssociationIcare"]
     },
+    {
+        "name": "Groupe local SSA Sud Ouest IDF",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": [],
+        "Territoire d’expérimentation": "Versailles, Saint-Quentin-en-Yvelines, Saclay",
+        "Partenaires": [],
+        "lat": 48.788247377211704,
+        "lng": 2.0473564968914766,
+        "address": "1 Av. des Prés, 78180 Montigny-le-Bretonneux, France",
+        "postcode": "78180",
+        "city": "Montigny-le-Bretonneux",
+        "website": "https://securite-sociale-alimentation.org/initiative/groupe-local-vsqy-saclay/",
+        "phone": "",
+        "email": "",
+        "summary": "Déterminé à porter la proposition de Sécurité sociale de l’alimentation un groupe de militants et militantes s’organisent pour diffuser l’idée de Sécurité Sociale de l’Alimentation sur le territoire du sud Ouest de l’île de France. Plusieurs actions ont été mises en place : porteurs de paroles, ateliers de discussions, arpentages de livres, journées d’autoformation sur la sécurité sociale de l’alimentation etc … ",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
