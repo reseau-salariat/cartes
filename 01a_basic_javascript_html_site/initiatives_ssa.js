@@ -216,6 +216,25 @@ var initiatives_ssa = [
             "https://solicagnole.fr/"
         ]
     },
+    {
+        "name": "Couserans (CAC09) – Ariège",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Multiples - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Saint-Girons - Couserans en Ariège",
+        "Partenaires": ["Croix Rouge", "Biocoop", "Secours Catholiques", "des élus à la mairie de St Girons", "une élue régionale sur la précarité alimentaire", "PNR des Pyrénées Ariégeoises et des bénévoles… + d’autres à solliciter! CAF", "projet de recherche participative HmmLab: INRAE (UMR Agir)", "ISTHIA", "PNR des Pyrénées Ariégeoises", "les Biches Volantes"],
+        "lat": 42.982897312581485,
+        "lng": 1.146062941970322,
+        "address": "Saint-Girons",
+        "postcode": "09200",
+        "city": "Saint-Girons",
+        "website": "https://securite-sociale-alimentation.org/initiative/citoyennete-et-alimentation-en-couserans-cac09-ariege/",
+        "phone": "",
+        "email": "",
+        "summary": "Pour une alimentation digne et durable en Haute-Garonne.",
+        "URLs": [
+            "https://www.bio-ariege-garonne.fr/article/accessibilite-alimentaire"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
@@ -270,23 +289,6 @@ var initiatives_ssa2 = [
         "phone": "",
         "email": "",
         "summary": "Une dynamique locale pour la sécurité sociale de l’alimentation.",
-        "URLs": []
-    },
-    {
-        "name": "Collectif SSA 31",
-        "type": "initiative SSA",
-        "Structures porteuses": ["Réseau Salariat Haute-Garonne", "AMAP 31", "Terre de Liens"],
-        "Territoire d’expérimentation": "Haute-Garonne",
-        "Partenaires": ["ATTAC Toulouse", "Les Amis de la Terre Midi-Pyrénées"],
-        "lat": 43.6043,
-        "lng": 1.4437,
-        "address": "Toulouse",
-        "postcode": "",
-        "city": "Toulouse",
-        "website": "",
-        "phone": "",
-        "email": "ssa31@gmail.com",
-        "summary": "Pour une alimentation digne et durable en Haute-Garonne.",
         "URLs": []
     },
     {
