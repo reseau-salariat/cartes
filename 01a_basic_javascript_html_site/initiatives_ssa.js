@@ -197,6 +197,25 @@ var initiatives_ssa = [
             "https://www.linkedin.com/company/territoires-%C3%A0-vivres-grand-lyon/"
         ]
     },
+    {
+        "name": "SoliCagnole ",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association dédiée SoliCagnole - initiative locale vers une SSA"],
+        "Territoire d’expérimentation": "Yonne et alentours",
+        "Partenaires": ["Monnaie locale de l’Yonne La Cagnole", "Terre de Liens Bourgogne Franche-Comté", "Groupement des AgroBiologistes de l’Yonne"],
+        "lat": 47.8588857621887,
+        "lng": 3.4465699790519695,
+        "address": "1 chemin de Charbuy 89113 Fleury-la-Vallée",
+        "postcode": "89113",
+        "city": "Fleury-la-Vallée",
+        "website": "https://securite-sociale-alimentation.org/initiative/solicagnole/",
+        "phone": "",
+        "email": "secretariat@solicagnole.fr",
+        "summary": "L’association Courts Circuits La Cagnole veut mettre en place une Sécurité Sociale de l’Alimentation, faisant de l’accessibilité à une alimentation soutenable et saine, un droit pour tous. Concrètement, chacun cotise chaque mois, selon ses moyens, de 10 à 100 Euros (ou plus) et tout le monde reçoit la même somme (la moyenne des cotisations) en monnaie locale, somme qui ne peut être dépensée qu’auprès de nos partenaires (producteurs et magasins bio, épiceries sociales et solidaires, épiceries indépendantes). Nous comptons co-créer une association dédiée à cette caisse, transparente et démocratique.",
+        "URLs": [
+            "https://solicagnole.fr/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
