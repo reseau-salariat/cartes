@@ -537,6 +537,23 @@ var initiatives_ssa = [
             "www.facebook.com/etalsolidaire/"
         ]
     },
+    {
+        "name": "Collectif Alimentation et Agriculture durables de Cachan",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Collectif informel - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Cachan",
+        "Partenaires": ["Mairie d’Ivry sur Seine / Maisons des quartiers d’Ivry sur Seine", "La confédération paysanne", "Association Poignées d’entraide", "Association La parenthèse"],
+        "lat": 48.7938138797509,
+        "lng": 2.3341417569779055,
+        "address": "Cachan",
+        "postcode": "94230",
+        "city": "Cachan",
+        "website": "https://securite-sociale-alimentation.org/initiative/collectif-alimentation-et-agriculture-durables-de-cachan/",
+        "phone": "",
+        "email": "alimentationcachan@gmail.com",
+        "summary": "Notre collectif s'est constitué après la découverte du projet de SSA à l'Université des mouvements sociaux de Nantes.",
+        "URLs": []
+    },
 ]
 
 var initiatives_ssa2 = [
