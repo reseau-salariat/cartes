@@ -517,6 +517,26 @@ var initiatives_ssa = [
             "http://www.caissalim-toulouse.org/"
         ]
     },
+    {
+        "name": "Etal Solidaire",
+        "type": "initiative SSA",
+        "Structures porteuses": ["Association - initiative locale vers une SSA"],
+        "Territoire d’expérimentation": "Val de Marne / Ivry sur Seine",
+        "Partenaires": ["Mairie d’Ivry sur Seine / Maisons des quartiers d’Ivry sur Seine", "La confédération paysanne", "Association Poignées d’entraide", "Association La parenthèse"],
+        "lat": 48.81535780094634,
+        "lng": 2.372974714684048,
+        "address": "80 Rue Jules Ferry, 94200 Ivry-sur-Seine, France Île-de-France",
+        "postcode": "94200",
+        "city": "Ivry-sur-Seine",
+        "website": "https://securite-sociale-alimentation.org/initiative/etal-solidaire/",
+        "phone": "",
+        "email": "",
+        "summary": "Soutenir le travail du maraicher en favorisant la commercialisation de sa production, grâce aux bénévoles de l’étal solidaire. Chaque semaine, Didier ( notre producteur ) nous livre en direct de sa ferme du Nord-Pas-de-Calais des produits bios et de saison.",
+        "URLs": [
+            "https://etalsolidaire.org/",
+            "www.facebook.com/etalsolidaire/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
