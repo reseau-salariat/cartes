@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <style>
         html, body {
             height: 100%;
@@ -46,7 +46,7 @@
             max-width: 300px;
         }
         .popup-name {
-            font-family: 'Comic Neue', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 1.6em;
             font-weight: bold;
         }
@@ -59,7 +59,15 @@
         <br>
         <input type="checkbox" id="toggleSSA" checked> Initiatives locales SSA
         <img src="static/images/icon_ssa.png" alt="Initiatives locales SSA" style="vertical-align:middle; width:58px; height:32px;">
+        <br>
+        <input type="checkbox" id="toggleEvents" checked> Événements
+        <div style="margin-left: 20px;">
+            <input type="checkbox" id="togglePastEvents" > <img src="static/images/icon_event_past.png" alt="Événements passés" style="vertical-align:middle; width:32px; height:32px;"> Événements passés
+            <br>
+            <input type="checkbox" id="toggleUpcomingEvents" checked> <img src="static/images/icon_event_upcoming.png" alt="Événements à venir" style="vertical-align:middle; width:32px; height:32px;"> Événements à venir
+        </div>
     </div>
+
     <div id="map-warning" class="map-warning">
         <p><strong>Note :</strong> Veuillez zoomer sur la carte et cliquer sur les marqueurs pour plus d'info.</p>
     </div>
@@ -67,6 +75,7 @@
     <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
     <script src="groupes_locaux.js"></script>
     <script src="initiatives_ssa.js"></script>
+    <script src="events.js"></script>
     <script>
         // Initialize the map
         var map = L.map('map').setView([46.603354, 1.888334], 6); // Center of France
@@ -85,20 +94,25 @@
             var iconType = 'rs'; // Default icon type
             var glCount = 0;
             var ssaCount = 0;
+            var eventCount = 0;
 
             markers.forEach(function(marker) {
                 if (marker.options.icon.options.iconUrl.includes('icon_rs.png')) {
                     glCount++;
                 } else if (marker.options.icon.options.iconUrl.includes('icon_ssa.png')) {
                     ssaCount++;
+                } else if (marker.options.icon.options.iconUrl.includes('icon_event_past.png') || marker.options.icon.options.iconUrl.includes('icon_event_upcoming.png')) {
+                    eventCount++;
                 }
             });
 
-            if (ssaCount > glCount) {
+            if (ssaCount > glCount && ssaCount > eventCount) {
                 iconType = 'ssa';
+            } else if (eventCount > glCount && eventCount > ssaCount) {
+                iconType = 'event';
             }
 
-            var iconUrl = (iconType === 'ssa') ? 'static/images/icon_ssa.png' : 'static/images/icon_rs.png';
+            var iconUrl = (iconType === 'ssa') ? 'static/images/icon_ssa.png' : (iconType === 'event') ? 'static/images/icon_event_upcoming.png' : 'static/images/icon_rs.png';
             var iconSize = (iconType === 'ssa') ? [58, 32] : [32, 32];
 
             // Create the cluster icon
@@ -118,7 +132,7 @@
             showCoverageOnHover: true,
             zoomToBoundsOnClick: true,
             maxClusterRadius: 120, // Set this to a high number if you want clusters only for very far apart markers
-            disableClusteringAtZoom: 5, // Clustering will be disabled at zoom level 14 and higher
+            disableClusteringAtZoom: 5, // Clustering will be disabled at zoom level 5 and higher
             iconCreateFunction: createCustomClusterIcon
         });
 
@@ -131,6 +145,14 @@
             iconCreateFunction: createCustomClusterIcon
         });
 
+        var eventsLayer = L.markerClusterGroup({
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: true,
+            zoomToBoundsOnClick: true,
+            maxClusterRadius: 120, // Same as above
+            disableClusteringAtZoom: 5, // Same as above
+            iconCreateFunction: createCustomClusterIcon
+        });
 
         // Define custom icons for individual markers
         var customIconGL = L.icon({
@@ -143,6 +165,20 @@
         var customIconSSA = L.icon({
             iconUrl: 'static/images/icon_ssa.png',
             iconSize: [58, 32],
+            iconAnchor: [16, 32],
+            popupAnchor: [0, -32]
+        });
+
+        var customIconEventUpcoming = L.icon({
+            iconUrl: 'static/images/icon_event_upcoming.png',
+            iconSize: [32, 32],
+            iconAnchor: [16, 32],
+            popupAnchor: [0, -32]
+        });
+
+        var customIconEventPast = L.icon({
+            iconUrl: 'static/images/icon_event_past.png',
+            iconSize: [32, 32],
             iconAnchor: [16, 32],
             popupAnchor: [0, -32]
         });
@@ -179,9 +215,30 @@
                 .bindPopup(popupContent);
         });
 
+        // Add markers for "Events"
+        var today = new Date();
+        events.forEach(function(event) {
+            var eventEndDate = new Date(event.endDate);
+            var isPastEvent = (eventEndDate < today);
+            var eventClass = isPastEvent ? 'past-event' : 'upcoming-event';
+            var eventIcon = isPastEvent ? customIconEventPast : customIconEventUpcoming;
+
+            var popupContent = '<div class="' + eventClass + '"><span class="popup-name">' + event.name + '</span><br>' +
+                '<b>Type:</b> ' + event.type + '<br>' +
+                '<b>Date de début:</b> ' + event.startDate + '<br>' +
+                '<b>Date de fin:</b> ' + event.endDate + '<br>' +
+                '<b>Adresse:</b> ' + event.address + ', ' + event.postcode + ' ' + event.city + '<br>' +
+                '<b>🌐</b> <a href="' + event.website + '" target="_blank">' + event.website + '</a><br>' +
+                '<p>' + event.description + '</p></div>';
+        
+            L.marker([event.lat, event.lng], { icon: eventIcon }).addTo(eventsLayer)
+                .bindPopup(popupContent);
+        });
+
         // Add the layers to the map
         groupesLayer.addTo(map);
         initiativesLayer.addTo(map);
+        eventsLayer.addTo(map);
 
         // Toggle the visibility of the "Groupes locaux" layer
         document.getElementById('toggleGL').addEventListener('change', function(e) {
@@ -203,6 +260,35 @@
             map.invalidateSize(true); // Force map to recalculate size and marker positions
         });
 
+        // Toggle the visibility of the "Events" layer
+        document.getElementById('toggleEvents').addEventListener('change', function(e) {
+            var toggleChecked = this.checked;
+            document.getElementById('togglePastEvents').checked = toggleChecked;
+            document.getElementById('toggleUpcomingEvents').checked = toggleChecked;
+            toggleChecked ? map.addLayer(eventsLayer) : map.removeLayer(eventsLayer);
+        });
+
+        // Toggle the visibility of the "Past Events" layer
+        document.getElementById('togglePastEvents').addEventListener('change', function(e) {
+            var showPastEvents = this.checked;
+            eventsLayer.eachLayer(function(layer) {
+                var isPastEvent = layer.options.icon.options.iconUrl.includes('icon_event_past.png');
+                if (isPastEvent) {
+                    showPastEvents ? map.addLayer(layer) : map.removeLayer(layer);
+                }
+            });
+        });
+
+        // Toggle the visibility of the "Upcoming Events" layer
+        document.getElementById('toggleUpcomingEvents').addEventListener('change', function(e) {
+            var showUpcomingEvents = this.checked;
+            eventsLayer.eachLayer(function(layer) {
+                var isUpcomingEvent = layer.options.icon.options.iconUrl.includes('icon_event_upcoming.png');
+                if (isUpcomingEvent) {
+                    showUpcomingEvents ? map.addLayer(layer) : map.removeLayer(layer);
+                }
+            });
+        });
 
         // Hide the warning message after 10 seconds
         setTimeout(function() {
