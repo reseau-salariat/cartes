@@ -554,6 +554,25 @@ var initiatives_ssa = [
         "summary": "Notre collectif s'est constitué après la découverte du projet de SSA à l'Université des mouvements sociaux de Nantes.",
         "URLs": []
     },
+    {
+        "name": "Collectif SSA22",
+        "type": "Groupe local pour une SSA",
+        "Structures porteuses": ["Collectif informel - initiative et groupe local de réflexion vers une SSA"],
+        "Territoire d’expérimentation": "Saint Brieuc Armor Agglomération",
+        "Partenaires": ["La Fédération départementale des MJC qui nous accueille pour nos réunions"],
+        "lat": 48.508056883552705, 
+        "lng": -2.763036045452393,
+        "address": "10 Boulevard Charner, 22000 Saint-Brieuc, Bretagne",
+        "postcode": "22000",
+        "city": "Saint-Brieuc",
+        "website": "https://securite-sociale-alimentation.org/initiative/collectif-ssa22/",
+        "phone": "",
+        "email": "",
+        "summary": "Cette prise de hauteur se traduit chez les personnes par un « mélange d’indignation et d’envie d’agir »",
+        "URLs": [
+            "https://www.facebook.com/people/Collectif-Ssa-St-Brieuc/100076064473121/"
+        ]
+    },
 ]
 
 var initiatives_ssa2 = [
