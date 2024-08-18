@@ -145,12 +145,22 @@
             iconCreateFunction: createCustomClusterIcon
         });
 
-        var eventsLayer = L.markerClusterGroup({
+        // Create separate layers for past and upcoming events
+        var pastEventsLayer = L.markerClusterGroup({
             spiderfyOnMaxZoom: true,
             showCoverageOnHover: true,
             zoomToBoundsOnClick: true,
-            maxClusterRadius: 120, // Same as above
-            disableClusteringAtZoom: 5, // Same as above
+            maxClusterRadius: 120,
+            disableClusteringAtZoom: 5,
+            iconCreateFunction: createCustomClusterIcon
+        });
+
+        var upcomingEventsLayer = L.markerClusterGroup({
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: true,
+            zoomToBoundsOnClick: true,
+            maxClusterRadius: 120,
+            disableClusteringAtZoom: 5,
             iconCreateFunction: createCustomClusterIcon
         });
 
@@ -230,15 +240,28 @@
                 '<b>Adresse:</b> ' + event.address + ', ' + event.postcode + ' ' + event.city + '<br>' +
                 '<b>🌐</b> <a href="' + event.website + '" target="_blank">' + event.website + '</a><br>' +
                 '<p>' + event.description + '</p></div>';
-        
-            L.marker([event.lat, event.lng], { icon: eventIcon }).addTo(eventsLayer)
-                .bindPopup(popupContent);
+
+            var marker = L.marker([event.lat, event.lng], { icon: eventIcon }).bindPopup(popupContent);
+
+            if (isPastEvent) {
+                pastEventsLayer.addLayer(marker);
+            } else {
+                upcomingEventsLayer.addLayer(marker);
+            }
         });
 
-        // Add the layers to the map
+        // Add the layers to the map based on the default legend state
+        if (document.getElementById('toggleUpcomingEvents').checked) {
+            map.addLayer(upcomingEventsLayer);
+        }
+
+        if (document.getElementById('togglePastEvents').checked) {
+            map.addLayer(pastEventsLayer);
+        }
+
+        // Add the other layers to the map
         groupesLayer.addTo(map);
         initiativesLayer.addTo(map);
-        eventsLayer.addTo(map);
 
         // Toggle the visibility of the "Groupes locaux" layer
         document.getElementById('toggleGL').addEventListener('change', function(e) {
@@ -265,29 +288,36 @@
             var toggleChecked = this.checked;
             document.getElementById('togglePastEvents').checked = toggleChecked;
             document.getElementById('toggleUpcomingEvents').checked = toggleChecked;
-            toggleChecked ? map.addLayer(eventsLayer) : map.removeLayer(eventsLayer);
+
+            if (toggleChecked) {
+                if (document.getElementById('toggleUpcomingEvents').checked) {
+                    map.addLayer(upcomingEventsLayer);
+                }
+                if (document.getElementById('togglePastEvents').checked) {
+                    map.addLayer(pastEventsLayer);
+                }
+            } else {
+                map.removeLayer(upcomingEventsLayer);
+                map.removeLayer(pastEventsLayer);
+            }
         });
 
         // Toggle the visibility of the "Past Events" layer
         document.getElementById('togglePastEvents').addEventListener('change', function(e) {
-            var showPastEvents = this.checked;
-            eventsLayer.eachLayer(function(layer) {
-                var isPastEvent = layer.options.icon.options.iconUrl.includes('icon_event_past.png');
-                if (isPastEvent) {
-                    showPastEvents ? map.addLayer(layer) : map.removeLayer(layer);
-                }
-            });
+            if (this.checked) {
+                map.addLayer(pastEventsLayer);
+            } else {
+                map.removeLayer(pastEventsLayer);
+            }
         });
 
         // Toggle the visibility of the "Upcoming Events" layer
         document.getElementById('toggleUpcomingEvents').addEventListener('change', function(e) {
-            var showUpcomingEvents = this.checked;
-            eventsLayer.eachLayer(function(layer) {
-                var isUpcomingEvent = layer.options.icon.options.iconUrl.includes('icon_event_upcoming.png');
-                if (isUpcomingEvent) {
-                    showUpcomingEvents ? map.addLayer(layer) : map.removeLayer(layer);
-                }
-            });
+            if (this.checked) {
+                map.addLayer(upcomingEventsLayer);
+            } else {
+                map.removeLayer(upcomingEventsLayer);
+            }
         });
 
         // Hide the warning message after 10 seconds
