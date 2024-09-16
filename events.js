@@ -13,6 +13,19 @@ var events = [
         description: "..."
     },
     {
+        name: "Fête de l'agriculture paysanne en Maine et Loire - table ronde sur la SSA",
+        type: "Rencontre, Formation",
+        startDate: "2024-09-21",
+        endDate: "2024-09-21",
+        address: "49460 Écuillé",
+        postcode: "49460",
+        city: "Vaour",
+        lat: 47.63169675692423,
+        lng: -0.5723741864754204,
+        website: "https://pdl.confederationpaysanne.fr/actu.php?id=14622",
+        description: "Une grande fête tous publics, pour partir à la rencontre de l’agriculture paysanne !"
+    },
+    {
         name: "La mairie est à vous - tout plein d'ateliers, dont Expérimentations de la Sécurité Sociale de l'Alimentation",
         type: "Rencontre, Formation",
         startDate: "2024-08-23",
