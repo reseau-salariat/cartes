@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Main map and general styles */
+        html, body { height: 100%; margin: 0; padding: 0; }
+        #map { height: 100%; width: 100%; }
+        
+        /* Styles for the Guadeloupe map corner */
+        #map-guadeloupe {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 300px;
+            height: 300px;
+            z-index: 1000;
+            border: 2px solid #333;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
         html, body {
             height: 100%;
             margin: 0;
@@ -54,6 +71,7 @@
 </head>
 <body>
     <div id="map"></div>
+    <div id="map-guadeloupe"></div>
     <div id="legend" class="legend">
         <input type="checkbox" id="toggleGL" checked> Groupes locaux <img src="static/images/icon_rs.png" alt="Groupe locaux" style="vertical-align:middle; width:32px; height:32px;">
         <br>
@@ -84,6 +102,16 @@
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
+
+        var mapGuadeloupe = L.map('map-guadeloupe', {
+            center: [16.265, -61.551], // Centered on Guadeloupe
+            zoom: 9,
+            zoomControl: false,
+            attributionControl: false
+        });
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapGuadeloupe);
+
 
         // Function to create a custom cluster icon
         function createCustomClusterIcon(cluster) {
@@ -128,6 +156,14 @@
 
         // Create marker cluster groups with custom clustering parameters
         var groupesLayer = L.markerClusterGroup({
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: true,
+            zoomToBoundsOnClick: true,
+            maxClusterRadius: 120, // Set this to a high number if you want clusters only for very far apart markers
+            disableClusteringAtZoom: 5, // Clustering will be disabled at zoom level 5 and higher
+            iconCreateFunction: createCustomClusterIcon
+        });
+        var groupesLayerGuadeloupe = L.markerClusterGroup({
             spiderfyOnMaxZoom: true,
             showCoverageOnHover: true,
             zoomToBoundsOnClick: true,
@@ -205,6 +241,11 @@
         
             L.marker([gl.lat, gl.lng], { icon: customIconGL }).addTo(groupesLayer)
                 .bindPopup(popupContent);
+
+            if (gl.name.includes("Guadeloupe")) {
+                L.marker([gl.lat, gl.lng], { icon: customIconGL }).addTo(groupesLayerGuadeloupe).bindPopup(popupContent);
+            }
+
         });
 
         // Add markers for "Initiatives locales SSA"
@@ -261,14 +302,17 @@
 
         // Add the other layers to the map
         groupesLayer.addTo(map);
+        groupesLayerGuadeloupe.addTo(mapGuadeloupe);
         initiativesLayer.addTo(map);
 
         // Toggle the visibility of the "Groupes locaux" layer
         document.getElementById('toggleGL').addEventListener('change', function(e) {
             if (this.checked) {
                 map.addLayer(groupesLayer);
+                mapGuadeloupe.addLayer(groupesLayerGuadeloupe);
             } else {
                 map.removeLayer(groupesLayer);
+                mapGuadeloupe.removeLayer(groupesLayerGuadeloupe);
             }
             map.invalidateSize(true); // Force map to recalculate size and marker positions
         });
