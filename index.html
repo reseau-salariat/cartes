@@ -77,14 +77,14 @@
     <div id="legend" class="legend">
         <input type="checkbox" id="toggleGL" checked> Groupes locaux <img src="static/images/icon_rs.png" alt="Groupe locaux" style="vertical-align:middle; width:32px; height:32px;">
         <br>
-        <input type="checkbox" id="toggleSSA" checked> Initiatives locales SSA
+        <input type="checkbox" id="toggleSSA" unchecked> Initiatives locales SSA
         <img src="static/images/icon_ssa.png" alt="Initiatives locales SSA" style="vertical-align:middle; width:58px; height:32px;">
         <br>
-        <input type="checkbox" id="toggleEvents" checked> Événements
+        <input type="checkbox" id="toggleEvents" unchecked> Événements
         <div style="margin-left: 20px;">
-            <input type="checkbox" id="togglePastEvents" > <img src="static/images/icon_event_past.png" alt="Événements passés" style="vertical-align:middle; width:32px; height:32px;"> Événements passés
+            <input type="checkbox" id="togglePastEvents" unchecked> <img src="static/images/icon_event_past.png" alt="Événements passés" style="vertical-align:middle; width:32px; height:32px;"> Événements passés
             <br>
-            <input type="checkbox" id="toggleUpcomingEvents" checked> <img src="static/images/icon_event_upcoming.png" alt="Événements à venir" style="vertical-align:middle; width:32px; height:32px;"> Événements à venir
+            <input type="checkbox" id="toggleUpcomingEvents" unchecked> <img src="static/images/icon_event_upcoming.png" alt="Événements à venir" style="vertical-align:middle; width:32px; height:32px;"> Événements à venir
         </div>
     </div>
 
@@ -305,7 +305,7 @@
         // Add the other layers to the map
         groupesLayer.addTo(map);
         groupesLayerGuadeloupe.addTo(mapGuadeloupe);
-        initiativesLayer.addTo(map);
+        /*initiativesLayer.addTo(map);*/
 
         // Toggle the visibility of the "Groupes locaux" layer
         document.getElementById('toggleGL').addEventListener('change', function(e) {
