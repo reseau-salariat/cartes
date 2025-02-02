@@ -38,6 +38,7 @@
             width: 100%;
         }
         .legend {
+            display: none;
             position: absolute;
             bottom: 30px;
             left: 10px;
@@ -86,7 +87,7 @@
             <br>
             <input type="checkbox" id="toggleUpcomingEvents" unchecked> <img src="static/images/icon_event_upcoming.png" alt="Événements à venir" style="vertical-align:middle; width:32px; height:32px;"> Événements à venir
         </div>
-    </div>
+    </div><
 
     <div id="map-warning" class="map-warning">
         <p><strong>Note :</strong> Veuillez zoomer sur la carte et cliquer sur les marqueurs pour plus d'info.</p>
@@ -285,12 +286,6 @@
                 '<p>' + event.description + '</p></div>';
 
             var marker = L.marker([event.lat, event.lng], { icon: eventIcon }).bindPopup(popupContent);
-
-            if (isPastEvent) {
-                pastEventsLayer.addLayer(marker);
-            } else {
-                upcomingEventsLayer.addLayer(marker);
-            }
         });
 
         // Add the layers to the map based on the default legend state
@@ -319,43 +314,10 @@
             map.invalidateSize(true); // Force map to recalculate size and marker positions
         });
 
-        // Toggle the visibility of the "Initiatives locales SSA" layer
-        document.getElementById('toggleSSA').addEventListener('change', function(e) {
-            if (this.checked) {
-                map.addLayer(initiativesLayer);
-            } else {
-                map.removeLayer(initiativesLayer);
-            }
-            map.invalidateSize(true); // Force map to recalculate size and marker positions
-        });
 
         // Toggle the visibility of the "Events" layer
-        document.getElementById('toggleEvents').addEventListener('change', function(e) {
-            var toggleChecked = this.checked;
-            document.getElementById('togglePastEvents').checked = toggleChecked;
-            document.getElementById('toggleUpcomingEvents').checked = toggleChecked;
-
-            if (toggleChecked) {
-                if (document.getElementById('toggleUpcomingEvents').checked) {
-                    map.addLayer(upcomingEventsLayer);
-                }
-                if (document.getElementById('togglePastEvents').checked) {
-                    map.addLayer(pastEventsLayer);
-                }
-            } else {
-                map.removeLayer(upcomingEventsLayer);
-                map.removeLayer(pastEventsLayer);
-            }
-        });
 
         // Toggle the visibility of the "Past Events" layer
-        document.getElementById('togglePastEvents').addEventListener('change', function(e) {
-            if (this.checked) {
-                map.addLayer(pastEventsLayer);
-            } else {
-                map.removeLayer(pastEventsLayer);
-            }
-        });
 
         // Toggle the visibility of the "Upcoming Events" layer
         document.getElementById('toggleUpcomingEvents').addEventListener('change', function(e) {
